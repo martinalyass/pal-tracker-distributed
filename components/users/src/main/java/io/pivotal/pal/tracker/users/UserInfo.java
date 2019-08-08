@@ -1,5 +1,7 @@
 package io.pivotal.pal.tracker.users;
 
+import org.springframework.web.bind.annotation.DeleteMapping;
+
 public class UserInfo {
 
     public final long id;
@@ -15,7 +17,6 @@ public class UserInfo {
     private UserInfo() {
         this(0, null, null);
     }
-
 
     @Override
     public boolean equals(Object o) {
